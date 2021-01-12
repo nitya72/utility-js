@@ -1,9 +1,4 @@
 const tail = (list) => {
-    const updatedList = list.filter((number, index) => {
-        if (index > 0) {
-            return number
-        }
-    })
-    return updatedList
+    return list.slice(1);
 }
 module.exports = tail;
